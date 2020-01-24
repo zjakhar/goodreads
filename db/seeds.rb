@@ -1,0 +1,16 @@
+book_1 = Book.create(title: "The Expanse", author: "Jame A Corey", isbn: "5555555555555")
+book_2 = Book.create(title: "Crime and Punishment", author: "Richard Blanco", isbn: "5555555555555")
+book_3 = Book.create(title: "How to Tame a Unicorn", author: "Charlie the Unicorn", isbn: "5555555555555")
+book_4 = Book.create(title: "Centaur Fancy", author: "Brimbar Winterhoof", isbn: "5555555555555")
+book_5 = Book.create(title: "Wizard of Earthsea", author: "Ursula Le Guin", isbn: "5555555555555")
+book_6 = Book.create(title: "The Witcher", author: "Polish polish polish", isbn: "5555555555555")
+book_7 = Book.create(title: "Unicorn Abroad: A Love Story about one Unicorn and one Centaur", author: "Claudia L. Hornsworth", isbn: "5555555555555")
+book_7 = Book.create(title: "Between the World and Me", author: "Ta-Nehisi Coates", isbn: "5555555555555")
+
+
+review_1 = Review.create(rating: 1, body:"this book is too good...or is it bad? ", book: book_1)
+review_2 = Review.create(rating: 4, body:"I haven't read this book but I hear its great.", book: book_2)
+review_3 = Review.create(rating: 5, body:"This book is necessary and timely.", book: book_7)
+review_4 = Review.create(rating: 3, body: "Magical", book: book_3)
+review_5 = Review.create(rating: 4, body: "Yasssss", book: book_4)
+review_6 = Review.create(rating: 5, body: " Fabulous. Great read. So much I could relate to, but also so much that I'd never thought about. I didn't agree with all of it, but I don't need to agree to grow and learn from an opinion. My only complaint is that it wasn't longer. I wanted more more more. Thumbs up.", book: book_5)

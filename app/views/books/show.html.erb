@@ -1,0 +1,23 @@
+
+<h2>Show page for<%= @book.title%></h2>
+
+<p>
+  <%= @book.author %>
+</p>
+
+<p>
+  <%= @book.isbn %>
+</p>
+
+<h4>Reviews</h4>
+<% @reviews.each do |review| %>
+<ul>
+  <li>
+    <%= review.rating %>
+    <%= review.body %>
+  </li>
+</ul>
+
+<% end %>
+
+<h2><%= link_to "Add a Review", new_book_review_path(@book) %></h2>
